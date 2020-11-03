@@ -1,0 +1,38 @@
+﻿@model Pet
+
+@{
+    ViewBag.Title = "Pet Info";
+}
+
+<div id="InfoDiv" asp-anti-forgery="true">
+    <div class="InfoWindow">
+        @if (Model.Avatar == null)
+        {
+            if (Model.PetType == PetTypes.Кот)
+            {
+                <a href="PetInfo?id=@Model.Id"><img id="AvatarImageInfo" src="~/images/uncat.png" /></a>
+            }
+            if (Model.PetType == PetTypes.Собака)
+            {
+                <a href="PetInfo?id=@Model.Id"><img id="AvatarImageInfo" src="~/images/undog.png" /></a>
+            }
+            if (Model.PetType == PetTypes.Другое)
+            {
+                <a href="PetInfo?id=@Model.Id"><img id="AvatarImageInfo" src="~/images/unrab.png" /></a>
+            }
+        }
+        else
+        {
+            <img id="AvatarImageInfo" src="data:image/jpeg;base64,@(Convert.ToBase64String(Model.Avatar))" />
+        }
+        <p id="PetNameInfo">@Model.Name</p>
+        <p id="PetGenderInfo"><span id="ColorTextInfo">Пол:</span> @Model.Gender</p>
+        <p id="PetTypeInfo"> <span id="ColorTextInfo">Вид:</span> @Model.PetType</p>
+        <p id="PetTownInfo"><span id="ColorTextInfo">Город:</span> @Model.Town</p>
+        <p id="PetAgeInfo"><span id="ColorTextInfo">Возраст:</span> @Model.Age лет</p>
+        <p id="PetSizeInfo"><span id="ColorTextInfo">Размер:</span> @Model.PetSize</p>
+        <p id="PetPhoneInfo"><span id="ColorTextInfo">Номер телефона:</span> @Model.Phone</p>
+        <label id="PetDescriptionInfoLabel"><span id="ColorTextInfo">Описание:</span></label>
+        <p id="PetDescriptionInfo">@Model.Description</p><br />
+    </div>
+</div>

@@ -1,0 +1,39 @@
+﻿@model IEnumerable<Pet>
+
+@{
+    ViewBag.Title = "My Pets";
+}
+
+<div id="MyPetsDiv" asp-anti-forgery="true">
+    @foreach (var pet in Model)
+    {
+        if (pet.IsPicked == false)
+        {
+    <div class="MyPetsWindow">
+        @if (pet.Avatar == null)
+        {
+            if (pet.PetType == PetTypes.Кот)
+            {
+                <a href="PetInfo?id=@pet.Id"><img id="MyPetsAvatar" src="~/images/uncat.png" /></a>
+            }
+            if (pet.PetType == PetTypes.Собака)
+            {
+                <a href="PetInfo?id=@pet.Id"><img id="MyPetsAvatar" src="~/images/undog.png" /></a>
+            }
+            if (pet.PetType == PetTypes.Другое)
+            {
+                <a href="PetInfo?id=@pet.Id"><img id="MyPetsAvatar" src="~/images/unrab.png" /></a>
+            }
+        }
+        else
+        {
+            <a href="PetInfo?id=@pet.Id"><img id="MyPetsAvatar" src="data:image/jpeg;base64,@(Convert.ToBase64String(pet.Avatar))" /></a>
+        }
+        <a href="PetInfo?id=@pet.Id"><p id="MyPetsName">@pet.Name</p></a>
+        <p id="MyPetsGenderTown">@pet.Gender / @pet.Town</p>
+        <a href="MyPetsRemove?id=@pet.Id"><img id="MyPetsRemove" src="~/images/heart.png" title="Усыновлен"/></a>
+        <a href="MyPetsDelete?id=@pet.Id"><img id="MyPetsDelete" src="~/images/rubbish.png" title="Удалить"/></a>
+    </div>
+        }
+    }
+</div>

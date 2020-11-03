@@ -1,0 +1,68 @@
+﻿@model IEnumerable<Pet>
+
+@{
+    ViewBag.Title = "Pet Search";
+}
+
+<h2 id="SearchLabel">Найди своего идеального питомца</h2>
+<div id="SearchDiv">
+    <form id="formGet" method="get" asp-action="GetPets" asp-controller="Home" asp-anti-forgery="true">
+        <div class="TypeChoose">
+            <input id="All" name="Type" type="radio" value="Все" />
+            <label id="AllLabel" for="All">Все</label> <br />
+            <input id="Cat" name="Type" type="radio" value="Кот" />
+            <label id="CatLabel" for="Cat">Кот</label><br />
+            <input id="Dog" name="Type" type="radio" value="Собака" />
+            <label id="DogLabel" for="Dog">Собака</label><br />
+            <input id="Other" name="Type" type="radio" value="Другое" />
+            <label id="OtherLabel" for="Other">Другое</label><br />
+        </div>
+        <div class="GenderChoose">
+            <input id="AllGenders" name="Gender" type="radio" value="Все" />
+            <label id="AllGendersLabel" for="AllGenders">Все</label> <br />
+            <input id="Boy" name="Gender" type="radio" value="Мальчик" />
+            <label id="BoyLabel" for="Gender">Мальчик</label> <br />
+            <input id="Girl" name="Gender" type="radio" value="Девочка" />
+            <label id="GirlLabel" for="Girl">Девочка</label> <br />
+        </div>
+        <div class="TownChoose">
+            <label id="town" name="Town">Введите город:</label>
+            <br />
+            <input id="townInput" name="Town" />
+            <br />
+            <input id="SearchBtn" type="image" src="~/images/lapka5.png" value="Поиск" />
+        </div>
+    </form>
+</div>
+<div id="Foreach">
+    @foreach (var pet in Model)
+    {
+        @if (pet.IsPicked == false)
+        {
+    <div class="PetContainer">
+        @if (pet.Avatar == null)
+        {
+            if (pet.PetType == PetTypes.Кот)
+            {
+                <a href="PetInfo?id=@pet.Id"><img id="AvatarImage" src="~/images/uncat.png" /></a>
+            }
+            if (pet.PetType == PetTypes.Собака)
+            {
+                <a href="PetInfo?id=@pet.Id"><img id="AvatarImage" src="~/images/undog.png" /></a>
+            }
+            if (pet.PetType == PetTypes.Другое)
+            {
+                <a href="PetInfo?id=@pet.Id"><img id="AvatarImage" src="~/images/unrab.png" /></a>
+            }
+        }
+        else
+        {
+            <a href="PetInfo?id=@pet.Id"><img id="AvatarImage" src="data:image/jpeg;base64,@(Convert.ToBase64String(pet.Avatar))" /></a>
+        }
+            <a href="PetInfo"><p id="PetName">@pet.Name</p></a>
+            <p id="PetGenderTown">@pet.Gender / @pet.Town</p>
+        </div>
+        }
+    }
+</div>
+
