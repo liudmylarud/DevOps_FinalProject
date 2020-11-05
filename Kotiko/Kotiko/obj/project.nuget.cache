@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jSTWnXGiUNbGuO6smgvAYBPd4MoZj1Da893Q5m0+hrkz0G9M3ushTMIX5ZgRKxhz/DSiBuMOyVvlIwtAv5jvow==",
+  "dgSpecHash": "3HxzfKgFUQab+W4+kfezodrfzAnrEvE36pMgB12J/DMpsanHRlu7nXo8Azu7v8aMvFRx2OFQoEos0X6LTJACrg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\user\\source\\repos\\Kotiko\\Kotiko\\Kotiko.csproj",
+  "projectFilePath": "C:\\Users\\user\\DevOps_Summer2020_FinalProject\\Kotiko\\Kotiko\\Kotiko.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
