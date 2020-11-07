@@ -21,7 +21,7 @@ namespace Kotiko.Models
         //    throw new NotImplementedException();
         //}
 
-        public PetsContext() : base("mobilesdb")
+        public PetsContext() : base("DefaultConnection")
         {
             Database.SetInitializer(new MigrateDatabaseToLatestVersion<PetsContext, Configuration>());
         }
