@@ -52,7 +52,7 @@ namespace Kotiko
             }
             app.UseHttpsRedirection();
             app.UseStaticFiles();
-
+            throw new Exception();
             app.UseRouting();
 
             app.UseAuthentication();    // аутентификация
