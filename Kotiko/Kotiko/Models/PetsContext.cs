@@ -1,7 +1,6 @@
-﻿using Kotiko.Migrations;
+﻿using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
-using System.Data.Entity;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -21,9 +20,10 @@ namespace Kotiko.Models
         //    throw new NotImplementedException();
         //}
 
-        public PetsContext() : base("DefaultConnection")
+        public PetsContext(DbContextOptions<PetsContext> options)
+           : base(options)
         {
-            Database.SetInitializer(new MigrateDatabaseToLatestVersion<PetsContext, Configuration>());
+            Database.EnsureCreated();   // создаем базу данных при первом обращении
         }
     }
 }

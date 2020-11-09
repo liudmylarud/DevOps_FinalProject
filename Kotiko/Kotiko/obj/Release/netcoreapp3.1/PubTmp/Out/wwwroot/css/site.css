@@ -1,0 +1,783 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+@font-face {
+    font-family: Outsiders;
+    src: ~/fonts/Outsiders.ttf;
+}
+
+.nav-link {
+    font-family: 'Franklin Gothic';
+    font-size: 17px;
+}
+
+#title {
+    font-family: Outsiders;
+    font-size: 50px;
+}
+
+main {
+    background-attachment: fixed;
+    background-image: url(../images/back.jpg);
+    width: 100%;
+}
+
+button {
+    margin-top: 20px;
+    height: 50px;
+    width: 200px;
+}
+
+.slogan {
+    background-image: url(../images/main.jpg);
+    width: 100%;
+    height: 540px;
+    font-family: 'Franklin Gothic';
+    font-size: 43px;
+    padding-top: 120px;
+    color: white;
+    font-weight: bold;
+    padding-left: 50px;
+}
+
+.info {
+    font-family: 'Franklin Gothic';
+    text-align: center;
+    margin-top: 60px;
+    color: black;
+}
+
+.column {
+    color: black;
+    padding-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 20px;
+    column-count: 3;
+    column-gap: 50px;
+    column-width: 110px;
+    column-rule: 4px solid #ccc;
+}
+
+#img1 {
+    padding-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 160px;
+}
+
+#img2 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 180px;
+}
+
+#img3 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 145px;
+}
+
+.info2 {
+    position: relative;
+    z-index: 1;
+    font-family: 'Franklin Gothic';
+    text-align: center;
+    padding: 17px;
+    margin-left: 160px;
+    margin-top: 100px;
+    margin-bottom: -50px;
+    color: white;
+    width: 580px;
+    height: 90px; /* Размеры */
+    background-image: url(../images/back3.jpg); /* Цвет фона */
+    border-radius: 10px; /* Радиус скругления */
+}
+
+.middleInfo {
+    background-image: url(../images/back2.jpg);
+}
+
+.slider {
+    float: right;
+    right: 40px;
+    position: relative;
+}
+
+.slider-image {
+    border-radius: 20px;
+    border: 3px #CCCCCC solid;
+    width: 400px;
+}
+
+* {
+    box-sizing: border-box
+}
+
+/* Slideshow container */
+.slideshow-container {
+    padding-top: 20px;
+    margin-left: 20px;
+    max-width: 600px;
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+    }
+
+/* Caption text */
+.text {
+    color: black;
+    font-family: 'Franklin Gothic';
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 0 0 20px 20px;
+    font-size: 30px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 3px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: black;
+    font-family: 'Franklin Gothic';
+    font-size:15px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 20px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 10px 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+    .active, .dot:hover {
+        background-color: #717171;
+    }
+
+/* Fading animation */
+.fading {
+    -webkit-animation-name: fading;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fading;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fading {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fading {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.info3-1 {
+    font-family: 'Franklin Gothic';
+    text-align: center;
+    font-size: 29px;
+    padding-top: 80px;
+    margin-left: 120px;
+    color: black;
+    width: 50%;
+}
+
+.num {
+    font-family: 'Franklin Gothic';
+    text-align: center;
+    font-size: 34px;
+    padding-top: 25px;
+    margin-left: 10px;
+    color:darkred;
+}
+
+#lapa {
+    width: 50px;
+}
+
+.info3-2 {
+    font-family: 'Franklin Gothic';
+    text-align: center;
+    font-size: 29px;
+    padding-top: 30px;
+    margin-left: 120px;
+    color: black;
+    padding-bottom: 40px;
+    width: 50%;
+}
+
+.about {
+    margin-top: 50px;
+    margin-left: 220px;
+    width: 900px;
+    height: 280px; /* Размеры */
+    border-radius: 30px; /* Радиус скругления */
+    border: 4px #CCCCCC solid;
+}
+
+.info4 {
+    margin-left: 590px;
+    position: relative;
+    margin-bottom: -60px;
+    font-family: 'Franklin Gothic';
+}
+
+.google-map {
+    margin-top: 0px;
+    margin-left: 0px;
+    border-radius: 30px 0 0 30px;
+}
+
+.info5 {
+    margin-left: 380px;
+    font-size: 18px;
+    position: relative;
+    margin-top: -220px;
+    text-align: center;
+    font-family: 'Franklin Gothic';
+}
+
+.medias-buttons {
+    margin-left: 380px;
+    position: relative;
+    text-align: center;
+    margin-top: -10px;
+    margin-bottom: 40px;
+}
+
+#btn1 {
+    width: 40px;
+}
+
+#btn2, #btn3 {
+    width: 40px;
+    margin-left: 20px;
+}
+
+#logout {
+    text-align: right;
+}
+
+#SiteLoginLabel {
+    padding-top: 30px;
+    font-family: 'Franklin Gothic';
+    color: black;
+    text-align: center;
+    color: white;
+}
+
+#formLogin, #formRegister {
+    padding-top: 20px;
+}
+
+.LoginWindow {
+    color: black;
+    margin-top: 0px;
+    margin-left: 400px;
+    text-align: center;
+    width: 500px;
+    height: 365px; /* Размеры */
+    background-image: url(../images/back3.jpg); /* Цвет фона */
+    border-radius: 30px; /* Радиус скругления */
+    margin-bottom: 72px;
+}
+
+#Regist {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+#phone {
+    padding-top: 20px;
+    font-family: 'Franklin Gothic';
+    font-size: 20px;
+    padding-right: 10px;
+}
+
+#phoneInput, #passInput, #passwdInput, #passwdInput2 {
+    width: 170px;
+    height: 30px;
+}
+
+#pass {
+    margin-left: 82px;
+    font-family: 'Franklin Gothic';
+    font-size: 20px;
+    padding-right: 10px;
+}
+
+#LoginBtn {
+    width: 130px;
+    text-align: center;
+}
+
+#SiteRegisterLabel {
+    padding-top: 30px;
+    font-family: 'Franklin Gothic';
+    color: black;
+    text-align: center;
+    color: white;
+}
+
+.RegisterWindow {
+    color: black;
+    margin-left: 400px;
+    text-align: center;
+    width: 500px;
+    height: 400px; /* Размеры */
+    background-image: url(../images/back3.jpg); /* Цвет фона */
+    border-radius: 30px; /* Радиус скругления */
+    margin-bottom: 39px;
+}
+
+#passwd {
+    padding-top: 20px;
+    margin-left: 82px;
+    font-family: 'Franklin Gothic';
+    font-size: 20px;
+    padding-right: 10px;
+}
+
+#passwd2 {
+    padding-top: 20px;
+    margin-left: 82px;
+    font-family: 'Franklin Gothic';
+    font-size: 20px;
+    padding-right: 10px;
+    margin-left: 65px;
+}
+
+#RegisterBtn {
+    margin-top: 15px;
+    width: 130px;
+    text-align: center;
+}
+
+#formCreate {
+    padding-top: 20px;
+}
+
+.CreateWindow {
+    margin-left: 400px;
+    width: 520px;
+    height: 633px; /* Размеры */
+    background-image: url(../images/back3.jpg); /* Цвет фона */
+    border-radius: 30px; /* Радиус скругления */
+    margin-bottom: 40px;
+}
+
+#CreateLabel {
+    padding-top: 30px;
+    font-family: 'Franklin Gothic';
+    color: black;
+    text-align: center;
+    color: white;
+}
+
+#NameLabel {
+    padding-top: 20px; 
+    font-family: 'Franklin Gothic';
+    font-size: 20px;
+    padding-right: 10px;
+    margin-left: 60px;
+}
+
+#NameWindow {
+    width: 340px;
+    height: 30px;
+}
+
+#TypeLabel, #AgeLabel, #townLabel, #DescriptionLabel, #AvatarLabel {
+    font-family: 'Franklin Gothic';
+    font-size: 20px;
+    padding-right: 10px;
+    padding-left: 60px;
+}
+
+#TypeWindow, #GenderWindow, #SizeWindow {
+    width: 100px;
+    font-family: 'Franklin Gothic';
+    height: 30px;
+}
+
+#GenderLabel {
+    font-family: 'Franklin Gothic';
+    font-size: 20px;
+    padding-left: 30px;
+}
+
+#SizeLabel {
+    font-family: 'Franklin Gothic';
+    font-size: 20px;
+    padding-left: 30px;
+}
+
+#AgeWindow {
+    width: 60px;
+    font-family: 'Franklin Gothic';
+    height: 30px;
+}
+
+#years {
+    font-family: 'Franklin Gothic';
+    font-size: 20px;
+    padding-left: 5px;
+}
+
+#townWindow {
+    width: 328px;
+}
+
+#DescriptionWindow {
+    margin-left: 60px;
+    width: 397px;
+    font-family: 'Franklin Gothic';
+    height: 80px;
+}
+
+#AvatarWindow {
+    width: 334px;
+    font-family: 'Franklin Gothic';
+    height: 30px;
+}
+
+#SendBtn {
+    width: 130px;
+    text-align: center;
+    margin-left: 200px;
+}
+
+#formGet {
+    width: 230px;
+    margin-left: 10px;
+    padding-top: 30px;
+    font-family: 'Franklin Gothic';
+    font-size: 21px;
+}
+
+#SearchLabel {
+    background-image: url(../images/back2.jpg);
+    height: 100px;
+    padding-top: 30px;
+    font-family: 'Franklin Gothic';
+    color: white;
+    text-align: center;
+}
+
+#All {
+    margin-top: 17px;
+}
+
+#All, #Cat, #Dog, #Other {
+    margin-left: 23px;
+}
+
+.TypeChoose { 
+    margin-top: -20px;
+    height: 170px; /* Размеры */
+    background-image: url(../images/back3.jpg); /* Цвет фона */
+    border-radius: 30px; /* Радиус скругления */
+    margin-bottom: 10px;
+}
+
+.GenderChoose {
+    height: 130px; /* Размеры */
+    background-image: url(../images/back3.jpg); /* Цвет фона */
+    border-radius: 30px; /* Радиус скругления */
+    margin-bottom: 10px;
+}
+
+#AllGenders {
+    margin-top: 17px;
+}
+
+#AllGenders, #Boy, #Girl {
+    margin-left: 23px;
+}
+
+.TownChoose {
+    height: 215px; /* Размеры */
+    background-image: url(../images/back3.jpg); /* Цвет фона */
+    border-radius: 30px; /* Радиус скругления */
+    margin-bottom: 10px;
+}
+
+#town {
+    margin-top: 10px;
+    margin-left: 23px;
+}
+
+#townInput {
+    width: 185px;
+    margin-left: 23px;
+}
+
+#SearchBtn {
+    margin-top: 20px;
+    width: 100px;
+    margin-left: 60px;
+}
+
+#Foreach {
+    width: 80%;
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+#SearchDiv {
+    vertical-align: top;
+    display: inline-block;
+}
+
+.PetContainer {
+    display: inline-block;
+    height: 325px;
+    width: 250px;
+    margin-right: 15px;
+}
+
+#AvatarImage {
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+}
+
+#PetName {
+    margin-top: 3px;
+    margin-left: 25px;
+    margin-bottom: 0px;
+    font-family: 'Franklin Gothic';
+    color: lightslategrey;
+    font-size: 25px;
+}
+
+#PetGenderTown {
+    margin-top: -3px;
+    margin-left: 25px;
+    font-family: 'Franklin Gothic';
+    color: black;
+    font-size: 15px;
+}
+
+#InfoDiv {
+    padding-top: 15px;
+    margin-bottom: 10px;
+}
+
+.InfoWindow {
+    padding-top: 30px;
+    margin-left: 265px;
+    margin-right: 700px;
+    width: 790px;
+    height: auto;
+    background-image: url(../images/back2.jpg); /* Цвет фона */
+    border-radius: 30px; /* Радиус скругления */
+}
+
+#AvatarImageInfo {
+    margin-left: 35px;
+    width: 350px;
+    height: 350px;
+    border-radius: 20px;
+}
+
+#PetNameInfo {
+    margin-top: -345px;
+    padding-left: 350px;
+    font-family: 'Franklin Gothic';
+    color: lightslategrey;
+    font-size: 32px;
+    text-align: center;
+}
+
+#PetGenderInfo, #PetTypeInfo, #PetTownInfo, #PetAgeInfo, #PetSizeInfo, #PetPhoneInfo {
+    margin-left: 415px;
+    font-family: 'Franklin Gothic';
+    font-size: 20px;
+}
+
+#PetDescriptionInfoLabel {
+    margin-top: 25px;
+    margin-left: 50px;
+    font-family: 'Franklin Gothic';
+    font-size: 20px;
+}
+
+#PetDescriptionInfo {
+    margin-left: 50px;
+    margin-right: 50px;
+    font-family: 'Bookman Old Style';
+    font-size: 20px;
+}
+
+#ColorTextInfo {
+    color: brown;
+}
+
+#MyPetsDiv {
+    padding-top: 20px;
+    min-height: 449px;
+}
+
+.MyPetsWindow {
+    margin-left: 240px;
+    margin-right: 50px;
+    margin-bottom: 10px;
+    width: 840px;
+    height: 70px;
+    background-image: url(../images/back3.jpg); /* Цвет фона */
+    border-radius: 20px; /* Радиус скругления */
+}
+
+#MyPetsAvatar {
+    margin-left: 20px;
+    margin-top: 5px;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+}
+
+#MyPetsName {
+    margin-top: -45px;
+    margin-left: 120px;
+}
+
+#MyPetsGenderTown {
+    margin-top: -40px;
+    margin-left: 380px;
+}
+
+#MyPetsRemove {
+    width: 30px;
+    margin-left: 740px;
+    margin-top: -80px;
+}
+
+#MyPetsDelete {
+    width: 30px;
+    margin-left: 15px;
+    margin-top: -80px;
+}
+
+
+
+
+
+
+
+
+
+
+a {
+    color: #0366d6;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px;
+}

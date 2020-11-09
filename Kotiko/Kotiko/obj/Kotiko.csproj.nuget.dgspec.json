@@ -38,9 +38,17 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
-            "entityframework": {
+            "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[6.4.4, )"
+              "version": "[3.1.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.9, )"
+            },
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[4.7.0, )"
             }
           },
           "imports": [
