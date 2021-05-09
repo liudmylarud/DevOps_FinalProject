@@ -39,7 +39,7 @@ namespace Kotiko.Controllers
 
                     return RedirectToAction("Create", "Home");
                 }
-                ModelState.AddModelError("", "Некорректные номер телефона и(или) пароль");
+                ModelState.AddModelError("", "Incorrect phone number and (or) password");
             }
             return View(model);
         }
@@ -67,7 +67,7 @@ namespace Kotiko.Controllers
                     return RedirectToAction("Create", "Home");
                 }
                 else
-                    ModelState.AddModelError("", "Некорректные номер телефона и(или) пароль");
+                    ModelState.AddModelError("", "Incorrect phone number and (or) password");
             }
             return View(model);
         }

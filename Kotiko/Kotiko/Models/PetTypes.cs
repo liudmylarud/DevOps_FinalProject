@@ -1,1 +1,1 @@
-﻿public enum PetTypes { Кот, Собака, Другое }
+﻿public enum PetTypes { Cat, Dog, Other }

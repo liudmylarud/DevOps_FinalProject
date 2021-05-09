@@ -4,33 +4,33 @@
     ViewBag.Title = "Pet Search";
 }
 
-<h2 id="SearchLabel">Найди своего идеального питомца</h2>
+<h2 id="SearchLabel">Find your perfect pet</h2>
 <div id="SearchDiv">
     <form id="formGet" method="get" asp-action="GetPets" asp-controller="Home" asp-anti-forgery="true">
         <div class="TypeChoose">
-            <input id="All" name="Type" type="radio" value="Все" />
-            <label id="AllLabel" for="All">Все</label> <br />
-            <input id="Cat" name="Type" type="radio" value="Кот" />
-            <label id="CatLabel" for="Cat">Кот</label><br />
-            <input id="Dog" name="Type" type="radio" value="Собака" />
-            <label id="DogLabel" for="Dog">Собака</label><br />
-            <input id="Other" name="Type" type="radio" value="Другое" />
-            <label id="OtherLabel" for="Other">Другое</label><br />
+            <input id="All" name="Type" type="radio" value="All" />
+            <label id="AllLabel" for="All">All</label> <br />
+            <input id="Cat" name="Type" type="radio" value="Cat" />
+            <label id="CatLabel" for="Cat">Cat</label><br />
+            <input id="Dog" name="Type" type="radio" value="Dog" />
+            <label id="DogLabel" for="Dog">Dog</label><br />
+            <input id="Other" name="Type" type="radio" value="Other" />
+            <label id="OtherLabel" for="Other">Other</label><br />
         </div>
         <div class="GenderChoose">
-            <input id="AllGenders" name="Gender" type="radio" value="Все" />
-            <label id="AllGendersLabel" for="AllGenders">Все</label> <br />
-            <input id="Boy" name="Gender" type="radio" value="Мальчик" />
-            <label id="BoyLabel" for="Gender">Мальчик</label> <br />
-            <input id="Girl" name="Gender" type="radio" value="Девочка" />
-            <label id="GirlLabel" for="Girl">Девочка</label> <br />
+            <input id="AllGenders" name="Gender" type="radio" value="All" />
+            <label id="AllGendersLabel" for="AllGenders">All</label> <br />
+            <input id="Boy" name="Gender" type="radio" value="Boy" />
+            <label id="BoyLabel" for="Gender">Boy</label> <br />
+            <input id="Girl" name="Gender" type="radio" value="Girl" />
+            <label id="GirlLabel" for="Girl">Girl</label> <br />
         </div>
         <div class="TownChoose">
-            <label id="town" name="Town">Введите город:</label>
+            <label id="town" name="Town">Enter city:</label>
             <br />
             <input id="townInput" name="Town" />
             <br />
-            <input id="SearchBtn" type="image" src="~/images/lapka5.png" value="Поиск" />
+            <input id="SearchBtn" type="image" src="~/images/lapka5.png" value="Search" />
         </div>
     </form>
 </div>
@@ -42,15 +42,15 @@
     <div class="PetContainer">
         @if (pet.Avatar == null)
         {
-            if (pet.PetType == PetTypes.Кот)
+            if (pet.PetType == PetTypes.Cat)
             {
                 <a href="PetInfo?id=@pet.Id"><img id="AvatarImage" src="~/images/uncat.png" /></a>
             }
-            if (pet.PetType == PetTypes.Собака)
+            if (pet.PetType == PetTypes.Dog)
             {
                 <a href="PetInfo?id=@pet.Id"><img id="AvatarImage" src="~/images/undog.png" /></a>
             }
-            if (pet.PetType == PetTypes.Другое)
+            if (pet.PetType == PetTypes.Other)
             {
                 <a href="PetInfo?id=@pet.Id"><img id="AvatarImage" src="~/images/unrab.png" /></a>
             }

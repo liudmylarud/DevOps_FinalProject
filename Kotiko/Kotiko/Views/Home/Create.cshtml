@@ -7,41 +7,41 @@
 
 <form id="formCreate" asp-action="create" enctype="multipart/form-data" asp-controller="home">
     <div class="CreateWindow">
-        <h2 id="CreateLabel">Добавить питомца</h2>
+        <h2 id="CreateLabel">Add pet</h2>
         <div class="form-group">
-            <label id="NameLabel" asp-for="Name" class="control-label">Имя:</label>
+            <label id="NameLabel" asp-for="Name" class="control-label">Name:</label>
             <input id="NameWindow" type="text" asp-for="Name" />
         </div>
         <div class="form-group">
-            <label id="TypeLabel" asp-for="PetType" class="control-label">Вид:</label>
+            <label id="TypeLabel" asp-for="PetType" class="control-label">Type:</label>
             <select id="TypeWindow" asp-for="PetType" asp-items="Html.GetEnumSelectList<PetTypes>()">
             </select>
-            <label id="GenderLabel" asp-for="Gender" class="control-label">Пол:</label>
+            <label id="GenderLabel" asp-for="Gender" class="control-label">Gender:</label>
             <select id="GenderWindow" asp-for="Gender" asp-items="Html.GetEnumSelectList<Gender>()">
             </select>
         </div>
         <div class="form-group">
-            <label id="AgeLabel" asp-for="Age" class="control-label">Возраст:</label>
+            <label id="AgeLabel" asp-for="Age" class="control-label">Age:</label>
             <input id="AgeWindow" step="any" type="text" asp-for="Age" />
-            <span id="years">лет</span>
-            <label id="SizeLabel" asp-for="PetSize" class="control-label">Размер:</label>
+            <span id="years">years</span>
+            <label id="SizeLabel" asp-for="PetSize" class="control-label">Size:</label>
             <select id="SizeWindow" asp-for="PetSize" asp-items="Html.GetEnumSelectList<PetSize>()">
             </select>
         </div>
         <div class="form-group">
-            <label id="townLabel" asp-for="Town" class="control-label">Город:</label>
+            <label id="townLabel" asp-for="Town" class="control-label">Town:</label>
             <input id="townWindow" type="text" asp-for="Town" />
         </div>
         <div class="form-group">
-            <label id="DescriptionLabel" asp-for="Description" class="control-label">Описание:</label> <br />
+            <label id="DescriptionLabel" asp-for="Description" class="control-label">Description:</label> <br />
             <textarea id="DescriptionWindow" type="text" asp-for="Description"></textarea>
         </div>
         <p>
-            <label id="AvatarLabel">Фото:</label>
+            <label id="AvatarLabel">Photo:</label>
             <input asp-for="Avatar" id="AvatarWindow" name="Avatar" type="file" />
         </p>
         <div class="form-group">
-            <input id="SendBtn" type="image" src="~/images/lapka2.png" value="Отправить" class="btn btn-default" />
+            <input id="SendBtn" type="image" src="~/images/lapka2.png" value="Send" class="btn btn-default" />
         </div>
     </div>
 

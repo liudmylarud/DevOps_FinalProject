@@ -114,6 +114,7 @@ button {
     border-radius: 20px;
     border: 3px #CCCCCC solid;
     width: 400px;
+    height: 375px;
 }
 
 * {
@@ -273,7 +274,7 @@ button {
 }
 
 .info4 {
-    margin-left: 590px;
+    margin-left: 557px;
     position: relative;
     margin-bottom: -60px;
     font-family: 'Franklin Gothic';
@@ -333,7 +334,7 @@ button {
     margin-left: 400px;
     text-align: center;
     width: 500px;
-    height: 365px; /* Размеры */
+    height: 361px; /* Размеры */
     background-image: url(../images/back3.jpg); /* Цвет фона */
     border-radius: 30px; /* Радиус скругления */
     margin-bottom: 72px;
@@ -357,10 +358,11 @@ button {
 }
 
 #pass {
-    margin-left: 82px;
+    margin-left: 44px;
     font-family: 'Franklin Gothic';
     font-size: 20px;
     padding-right: 10px;
+
 }
 
 #LoginBtn {
@@ -381,7 +383,7 @@ button {
     margin-left: 400px;
     text-align: center;
     width: 500px;
-    height: 400px; /* Размеры */
+    height: 394px; /* Размеры */
     background-image: url(../images/back3.jpg); /* Цвет фона */
     border-radius: 30px; /* Радиус скругления */
     margin-bottom: 39px;
@@ -440,7 +442,7 @@ button {
 }
 
 #NameWindow {
-    width: 340px;
+    width: 320px;
     height: 30px;
 }
 
@@ -461,12 +463,14 @@ button {
     font-family: 'Franklin Gothic';
     font-size: 20px;
     padding-left: 30px;
+    margin-right: 10px;
 }
 
 #SizeLabel {
     font-family: 'Franklin Gothic';
     font-size: 20px;
     padding-left: 30px;
+    margin-right: 10px;
 }
 
 #AgeWindow {
@@ -493,7 +497,7 @@ button {
 }
 
 #AvatarWindow {
-    width: 334px;
+    width: 327px;
     font-family: 'Franklin Gothic';
     height: 30px;
 }

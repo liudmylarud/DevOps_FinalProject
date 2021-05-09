@@ -8,15 +8,15 @@
     <div class="InfoWindow">
         @if (Model.Avatar == null)
         {
-            if (Model.PetType == PetTypes.Кот)
+            if (Model.PetType == PetTypes.Cat)
             {
                 <a href="PetInfo?id=@Model.Id"><img id="AvatarImageInfo" src="~/images/uncat.png" /></a>
             }
-            if (Model.PetType == PetTypes.Собака)
+            if (Model.PetType == PetTypes.Dog)
             {
                 <a href="PetInfo?id=@Model.Id"><img id="AvatarImageInfo" src="~/images/undog.png" /></a>
             }
-            if (Model.PetType == PetTypes.Другое)
+            if (Model.PetType == PetTypes.Other)
             {
                 <a href="PetInfo?id=@Model.Id"><img id="AvatarImageInfo" src="~/images/unrab.png" /></a>
             }
@@ -26,13 +26,13 @@
             <img id="AvatarImageInfo" src="data:image/jpeg;base64,@(Convert.ToBase64String(Model.Avatar))" />
         }
         <p id="PetNameInfo">@Model.Name</p>
-        <p id="PetGenderInfo"><span id="ColorTextInfo">Пол:</span> @Model.Gender</p>
-        <p id="PetTypeInfo"> <span id="ColorTextInfo">Вид:</span> @Model.PetType</p>
-        <p id="PetTownInfo"><span id="ColorTextInfo">Город:</span> @Model.Town</p>
-        <p id="PetAgeInfo"><span id="ColorTextInfo">Возраст:</span> @Model.Age лет</p>
-        <p id="PetSizeInfo"><span id="ColorTextInfo">Размер:</span> @Model.PetSize</p>
-        <p id="PetPhoneInfo"><span id="ColorTextInfo">Номер телефона:</span> @Model.Phone</p>
-        <label id="PetDescriptionInfoLabel"><span id="ColorTextInfo">Описание:</span></label>
+        <p id="PetGenderInfo"><span id="ColorTextInfo">Gender:</span> @Model.Gender</p>
+        <p id="PetTypeInfo"> <span id="ColorTextInfo">Type:</span> @Model.PetType</p>
+        <p id="PetTownInfo"><span id="ColorTextInfo">Town:</span> @Model.Town</p>
+        <p id="PetAgeInfo"><span id="ColorTextInfo">Age:</span> @Model.Age years</p>
+        <p id="PetSizeInfo"><span id="ColorTextInfo">Size:</span> @Model.PetSize</p>
+        <p id="PetPhoneInfo"><span id="ColorTextInfo">Phone num.:</span> @Model.Phone</p>
+        <label id="PetDescriptionInfoLabel"><span id="ColorTextInfo">Description:</span></label>
         <p id="PetDescriptionInfo">@Model.Description</p><br />
     </div>
 </div>

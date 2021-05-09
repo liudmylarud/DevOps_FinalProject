@@ -8,23 +8,23 @@
     <div class="validation" asp-validation-summary="ModelOnly"></div>
     <div class="RegisterWindow">
         <div>
-            <h2 id="SiteRegisterLabel">Регистрация</h2>
-            <label id="phone" asp-for="Phone">Введите номер телефона:</label>
+            <h2 id="SiteRegisterLabel">Registration</h2>
+            <label id="phone" asp-for="Phone">Enter your phone number:</label>
             <input id="phoneInput" type="text" asp-for="Phone" />
             <span asp-validation-for="Phone" />
         </div>
         <div>
-            <label id="passwd" asp-for="Password">Введите пароль:</label>
+            <label id="passwd" asp-for="Password">Enter password:</label>
             <input id="passwdInput" asp-for="Password" />
             <span asp-validation-for="Password" />
         </div>
         <div>
-            <label id="passwd2" asp-for="ConfirmPassword">Повторите пароль:</label>
+            <label id="passwd2" asp-for="ConfirmPassword">Repeat password:</label>
             <input id="passwdInput2" asp-for="ConfirmPassword" />
             <span asp-validation-for="ConfirmPassword" />
         </div>
         <div>
-            <input id="RegisterBtn" type="image" src="~/images/lapka4.png" value="Регистрация" class="btn btn btn-default" />
+            <input id="RegisterBtn" type="image" src="~/images/lapka4.png" value="Registration" class="btn btn btn-default" />
         </div>
     </div>
 </form>

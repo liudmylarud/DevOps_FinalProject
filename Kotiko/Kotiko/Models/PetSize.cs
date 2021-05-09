@@ -1,1 +1,1 @@
-﻿public enum PetSize { Маленький, Средний, Большой }
+﻿public enum PetSize { Small, Medium, Big }

@@ -8,10 +8,10 @@ namespace Kotiko.ViewModels
 {
     public class LoginModel
     {
-        [Required(ErrorMessage = "Не указан номер телефона")]
+        [Required(ErrorMessage = "Phone number not specified")]
         public string Phone { get; set; }
 
-        [Required(ErrorMessage = "Не указан пароль")]
+        [Required(ErrorMessage = "Password not specified")]
         [DataType(DataType.Password)]
         public string Password { get; set; }
     }

@@ -12,15 +12,15 @@
     <div class="MyPetsWindow">
         @if (pet.Avatar == null)
         {
-            if (pet.PetType == PetTypes.Кот)
+            if (pet.PetType == PetTypes.Cat)
             {
                 <a href="PetInfo?id=@pet.Id"><img id="MyPetsAvatar" src="~/images/uncat.png" /></a>
             }
-            if (pet.PetType == PetTypes.Собака)
+            if (pet.PetType == PetTypes.Dog)
             {
                 <a href="PetInfo?id=@pet.Id"><img id="MyPetsAvatar" src="~/images/undog.png" /></a>
             }
-            if (pet.PetType == PetTypes.Другое)
+            if (pet.PetType == PetTypes.Other)
             {
                 <a href="PetInfo?id=@pet.Id"><img id="MyPetsAvatar" src="~/images/unrab.png" /></a>
             }
@@ -31,8 +31,8 @@
         }
         <a href="PetInfo?id=@pet.Id"><p id="MyPetsName">@pet.Name</p></a>
         <p id="MyPetsGenderTown">@pet.Gender / @pet.Town</p>
-        <a href="MyPetsRemove?id=@pet.Id"><img id="MyPetsRemove" src="~/images/heart.png" title="Усыновлен"/></a>
-        <a href="MyPetsDelete?id=@pet.Id"><img id="MyPetsDelete" src="~/images/rubbish.png" title="Удалить"/></a>
+        <a href="MyPetsRemove?id=@pet.Id"><img id="MyPetsRemove" src="~/images/heart.png" title="Adopted"/></a>
+        <a href="MyPetsDelete?id=@pet.Id"><img id="MyPetsDelete" src="~/images/rubbish.png" title="Delete"/></a>
     </div>
         }
     }

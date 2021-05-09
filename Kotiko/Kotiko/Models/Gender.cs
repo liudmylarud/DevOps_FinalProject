@@ -1,1 +1,1 @@
-﻿public enum Gender { Мальчик, Девочка }
+﻿public enum Gender { Boy, Girl }
