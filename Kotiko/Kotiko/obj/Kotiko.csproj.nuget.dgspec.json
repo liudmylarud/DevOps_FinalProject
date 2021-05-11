@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\DevOps_Summer2020_FinalProject\\Kotiko\\Kotiko\\Kotiko.csproj": {}
+    "C:\\Users\\user\\DevOps_FinalProject\\Kotiko\\Kotiko\\Kotiko.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\DevOps_Summer2020_FinalProject\\Kotiko\\Kotiko\\Kotiko.csproj": {
+    "C:\\Users\\user\\DevOps_FinalProject\\Kotiko\\Kotiko\\Kotiko.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\DevOps_Summer2020_FinalProject\\Kotiko\\Kotiko\\Kotiko.csproj",
+        "projectUniqueName": "C:\\Users\\user\\DevOps_FinalProject\\Kotiko\\Kotiko\\Kotiko.csproj",
         "projectName": "Kotiko",
-        "projectPath": "C:\\Users\\user\\DevOps_Summer2020_FinalProject\\Kotiko\\Kotiko\\Kotiko.csproj",
+        "projectPath": "C:\\Users\\user\\DevOps_FinalProject\\Kotiko\\Kotiko\\Kotiko.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\DevOps_Summer2020_FinalProject\\Kotiko\\Kotiko\\obj\\",
+        "outputPath": "C:\\Users\\user\\DevOps_FinalProject\\Kotiko\\Kotiko\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RHUO2ddsILhPo76tF4W7ryKMhEfo3SvSsGOFs7z6+FGEZFe/7fhUsBC44EwKg0vV+ij2BAt4Umw2jYZIn6xm/w==",
+  "dgSpecHash": "SbJnmFM+mje+6P1Ny4lGdpxpdE+fYMSaCELTfZgtu0gF+FecE19ePrd1on9cOTbFo5u38FZ+5dfGPhVc2UTbMA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\user\\DevOps_Summer2020_FinalProject\\Kotiko\\Kotiko\\Kotiko.csproj",
+  "projectFilePath": "C:\\Users\\user\\DevOps_FinalProject\\Kotiko\\Kotiko\\Kotiko.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",
