@@ -9,6 +9,16 @@ namespace Kotiko.Models
     public class PetsContext : DbContext
     {
         public DbSet<Pet> Pets { get; set; }
+        //public PetsContext(DbContextOptions<PetsContext> options)
+        //    : base(options)
+        //{
+        //    Database.EnsureCreated();
+        //}
+
+        //internal void SaveChanges()
+        //{
+        //    throw new NotImplementedException();
+        //}
 
         public PetsContext(DbContextOptions<PetsContext> options)
            : base(options)
